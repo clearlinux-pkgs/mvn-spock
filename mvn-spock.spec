@@ -4,7 +4,7 @@
 #
 Name     : mvn-spock
 Version  : 1.0
-Release  : 2
+Release  : 3
 URL      : https://github.com/spockframework/spock/archive/spock-1.0.tar.gz
 Source0  : https://github.com/spockframework/spock/archive/spock-1.0.tar.gz
 Source1  : https://repo1.maven.org/maven2/org/spockframework/spock-core/1.0-groovy-2.4/spock-core-1.0-groovy-2.4.jar
