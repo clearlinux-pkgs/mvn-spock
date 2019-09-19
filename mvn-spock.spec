@@ -4,11 +4,13 @@
 #
 Name     : mvn-spock
 Version  : 1.0
-Release  : 3
+Release  : 4
 URL      : https://github.com/spockframework/spock/archive/spock-1.0.tar.gz
 Source0  : https://github.com/spockframework/spock/archive/spock-1.0.tar.gz
 Source1  : https://repo1.maven.org/maven2/org/spockframework/spock-core/1.0-groovy-2.4/spock-core-1.0-groovy-2.4.jar
 Source2  : https://repo1.maven.org/maven2/org/spockframework/spock-core/1.0-groovy-2.4/spock-core-1.0-groovy-2.4.pom
+Source3  : https://repo1.maven.org/maven2/org/spockframework/spock-core/1.3-groovy-2.5/spock-core-1.3-groovy-2.5.jar
+Source4  : https://repo1.maven.org/maven2/org/spockframework/spock-core/1.3-groovy-2.5/spock-core-1.3-groovy-2.5.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -53,6 +55,12 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/spockframework/spoc
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/spockframework/spock-core/1.0-groovy-2.4
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/spockframework/spock-core/1.0-groovy-2.4/spock-core-1.0-groovy-2.4.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/spockframework/spock-core/1.3-groovy-2.5
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/spockframework/spock-core/1.3-groovy-2.5/spock-core-1.3-groovy-2.5.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/spockframework/spock-core/1.3-groovy-2.5
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/spockframework/spock-core/1.3-groovy-2.5/spock-core-1.3-groovy-2.5.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -61,6 +69,8 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/spockframework/spoc
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/org/spockframework/spock-core/1.0-groovy-2.4/spock-core-1.0-groovy-2.4.jar
 /usr/share/java/.m2/repository/org/spockframework/spock-core/1.0-groovy-2.4/spock-core-1.0-groovy-2.4.pom
+/usr/share/java/.m2/repository/org/spockframework/spock-core/1.3-groovy-2.5/spock-core-1.3-groovy-2.5.jar
+/usr/share/java/.m2/repository/org/spockframework/spock-core/1.3-groovy-2.5/spock-core-1.3-groovy-2.5.pom
 
 %files license
 %defattr(0644,root,root,0755)
